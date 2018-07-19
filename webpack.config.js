@@ -3,7 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const htmlWebpack = new HtmlWebpackPlugin({
 	template: './assets/index.template.html',
-	filename: 'index.html'
+	filename: 'index.html',
+	performance: {
+	   hints: true,
+	   maxBundleSize: 250,
+	   warnAtPercent: 80
+	}
 });
 
 module.exports = {

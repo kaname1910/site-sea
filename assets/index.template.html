@@ -5,7 +5,33 @@
 		<title>Webpage</title>
 	</head>
 <body>
-	<section>
+	<div class="menu"><img src="./public/images/menu.svg"></div>
+	<div class="menu-screen">
+		<a href="#" class="close"><img src="./public/images/close.svg"></a>
+		<nav>
+			<a href="#home">
+				<span class="main">Home</span>
+				<span>Know about us</span>
+			</a>
+			<a href="#about">
+				<span class="main">Slider</span>
+				<span>Sliderss</span>
+			</a>
+			<a href="#mission">
+				<span class="main">Mission</span>
+				<span>Our mission</span>
+			</a>
+			<a href="#map">
+				<span class="main">Location</span>
+				<span>Mapx</span>
+			</a>
+			<a href="#social">
+				<span class="main">Contact</span>
+				<span>Social</span>
+			</a>
+		</nav>
+	</div>
+	<section id="home">
 		<div class="grid">
 			<div class="container">
 				<div class="grid-main-area">
@@ -40,7 +66,7 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="about">
 		<div class="grid-main-area slider">
 			<div class="text">
 				<div class="controls">
@@ -63,7 +89,7 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="mission">
 		<div class="grid full-height mission">
 			<div class="container">
 				<h1>Our mission</h1>
@@ -81,7 +107,11 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="map">
+		<div id="mapa"></div>
+	</section>
+
+	<section id="social">
 		<div class="grid social">
 			<div class="container">
 				<p class="title">Contact Us</p>
@@ -92,5 +122,7 @@
 			</div>
 		</div>
 	</section>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDk1dkI-zUJKl1jaAgdoXPoAcxV0vFANA"></script>
 </body>
 </html>
